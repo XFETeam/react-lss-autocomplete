@@ -1,13 +1,13 @@
-# react-autocomplete
+# react-lss-autocomplete
 
 > 
 
-[![NPM](https://img.shields.io/npm/v/react-autocomplete.svg)](https://www.npmjs.com/package/react-autocomplete) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-lss-autocomplete.svg)](https://www.npmjs.com/package/react-autocomplete) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-autocomplete
+npm install --save react-lss-autocomplete
 ```
 
 ## Usage
@@ -26,6 +26,10 @@ class Example extends Component {
 }
 ```
 
+<video id="video" controls="" preload="none" poster="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg">
+      <source id="mp4" src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
+</video>
+      
 ## License
 
 MIT © [browniu](https://github.com/browniu)
