@@ -23,19 +23,28 @@ export default class AutoComplete extends Component {
   }
 
   watchInputDom() {
-    document.body.addEventListener('focus', (e) => {
+    const rootDom = findDOMNode(this)
+    rootDom.addEventListener('focus', (e) => {
       clearTimeout(this.bulrTimer)
       this.inputDom = e.target
       if (this.inputDom) {
         this.name = this.inputDom.name ? this.inputDom.name : 'defaultRecommendList'
         this.updateList(this.name)
+
+        const enterBlur = (e) => {
+          if (e.keyCode === 13) {
+            this.inputDom.blur()
+            this.inputDom.removeEventListener('keyup', enterBlur)
+          }
+        }
+        this.inputDom.addEventListener('keyup', enterBlur)
       }
     }, true)
-    document.body.addEventListener('change', (e) => {
+    rootDom.addEventListener('change', (e) => {
       const value = e.target.value
       if (value) this.saveList(this.name, value)
     }, true)
-    document.body.addEventListener('blur', () => {
+    rootDom.addEventListener('blur', () => {
       this.bulrTimer = setTimeout(() => this.setState({ifRecommendShow: false}), 100)
     }, true)
   }
