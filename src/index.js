@@ -11,11 +11,12 @@ export default class AutoComplete extends Component {
       ifRecommendShow: false,
       recommendList: undefined
     }
-    this.name = 'defaultRecommendList'
+    this.name = this.props.listName
   }
 
   static defaultProps = {
-    recommendListClassName: 'rlsac-recommend'
+    listName: 'defaultRecommendList',
+    listClass: 'rlac-recommend'
   }
 
   componentDidMount() {
@@ -28,7 +29,7 @@ export default class AutoComplete extends Component {
       clearTimeout(this.bulrTimer)
       this.inputDom = e.target
       if (this.inputDom) {
-        this.name = this.inputDom.name ? this.inputDom.name : 'defaultRecommendList'
+        this.name = this.inputDom.name ? this.inputDom.name : this.props.listName
         this.updateList(this.name)
 
         const enterBlur = (e) => {
@@ -134,7 +135,7 @@ export default class AutoComplete extends Component {
           left: recommendPos.left,
           width: recommendPos.width
         }}
-        className={this.props.recommendListClassName}
+        className={this.props.listClass}
         onClick={e => {
           this.selectRecommend(e)
         }}
@@ -151,8 +152,8 @@ export default class AutoComplete extends Component {
   render() {
     const {children} = this.props
     return (
-      <div className={'rlsac-root'}>
-        <div className='rlsac-main'>{children}</div>
+      <div className='rlac-root'>
+        <div className='rlac-main'>{children}</div>
         {this.renderRecommendList()}
       </div>
     )
