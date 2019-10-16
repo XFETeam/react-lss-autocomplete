@@ -1,13 +1,14 @@
 {
-  "name": "react-sharestorage-autocomplete",
+  "name": "react-lss-autocomplete",
   "version": "0.0.1",
   "description": "",
   "author": "browniu",
   "license": "MIT",
-  "repository": "https://github.com/browniu/react-shareStorage-AutoComplete",
+  "repository": "https://github.com/browniu/react-lss-autocomplete",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
+  "homepage": ".",
   "engines": {
     "node": ">=8",
     "npm": ">=5"

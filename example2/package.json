@@ -1,0 +1,25 @@
+{
+  "name": "react-autocomplete-example",
+  "repository": "https://github.com/browniu/react-autocomplete-example",
+  "homepage": "react-lss-autocomplete-example/",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-autocomplete": "link:..",
+    "react-dom": "^16.4.1",
+    "react-scripts": "^1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && node publish.js"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
