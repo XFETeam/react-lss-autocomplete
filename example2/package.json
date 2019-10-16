@@ -1,7 +1,7 @@
 {
   "name": "react-autocomplete-example",
   "repository": "https://github.com/browniu/react-autocomplete-example",
-  "homepage": "react-lss-autocomplete-example/",
+  "homepage": ".",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
