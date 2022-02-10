@@ -55,7 +55,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-url": "^1.4.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "localstorage-share": "^0.1.2"
   },
   "files": [
